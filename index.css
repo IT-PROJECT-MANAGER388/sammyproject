@@ -292,6 +292,12 @@ header .fa{
 
 @media (max-width: 767px) and (orientation: portrait){
 
+    html, body{
+
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .about-section{
 
         padding: 20px;
