@@ -1,0 +1,461 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+
+    width: 100%;
+    overflow-x: clip;
+    
+}
+
+/* ===================================================================================================================== */
+/*                                                   HEADER SECTION                                                      */
+/* ===================================================================================================================== */
+
+header{
+
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+
+
+
+header p{
+
+    font-weight: bold;
+}
+
+
+.menu a{
+
+    text-decoration: none;
+    margin: 25px;
+    color: #fff;
+}
+
+
+.menu a:hover{
+
+    border-bottom: 2px solid yellow;
+    color: blue;
+    transition: 3s;
+}
+
+/* ===================================================================================================================== */
+/*                                                    HERO-SECTION                                                       */
+/* ===================================================================================================================== */
+
+.hero{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)),url(images/Kitchen-cover-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+}
+
+
+.hero h1{                /* MAIN-HEADING DISPLAYED IN BOLD (BUILDING DREAMS FROM FOUNDATIONS TO FINISH)*/
+
+    color: white;
+    font-size: 50px;
+    font-weight:bolder;
+
+}
+
+
+.unique-subheading{      /* SUB-HEADING OF MAIN HEADING (FROM FOUNDATIONS TO FINISH) */
+
+    color:yellow;
+}
+
+
+hr{                     /* HORIZONTAL LINE BELOW THE MAIN-HEADING */
+    width: 662px;
+}
+
+
+.description{          /* DESCRIPTION SECTION */
+
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.hero h1, hr{          /* ALTER THE MAIN HEADING AND HORIZONTAL LINE POSITION */
+
+    position: relative;
+    top: 100px;
+    left: 70px;
+}
+
+
+.hero .description{   /* ALTER THE DESCRIPTION POSITION */
+
+    position: relative;
+    top: 120px;
+    left: 70px;
+
+
+}
+
+
+.hero .our-offers{  /* ALTER THE POSITION FOR ALL IMAGES INSIDE OUR OFFERS CLASS */
+
+    margin-top: 150px;
+    margin-left: 70px;
+    
+}
+
+
+.offer{             /* ALTER ALL IMAGES WITH OFFER CLASS INSIDE OUR OFFERS CLASS */
+
+    width: 250px;
+    display: inline-block;
+    margin: 5px;
+    padding: 25px;
+    
+}
+
+
+.building-image, .pave-image, .interior-image, .exterior-image{
+    
+    width: 250px;
+    height: 166.66px;
+}
+
+
+.image-description, .image-descriptionEXD{   /* ALTER THE DESCRIPTION OF ALL IMAGES INSIDE THE OUR OFFERS CLASS */
+
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ===================================================================================================================== */
+/*                                                      ABOUT-US SECTION                                                 */
+/* ===================================================================================================================== */
+
+.about-section{
+
+    background: snow;
+    color: dimgray;
+    text-align: center;
+}
+
+/* ===================================================================================================================== */
+/*                                                      OUR-SERVICES SECTION                                             */
+/* ===================================================================================================================== */
+
+.our-services-section{
+
+    text-align: center;
+    background: teal;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+button{
+    padding: 5px;
+    width: 150px;
+    font-size: 20px;
+    color: #fff;
+    background: orange;
+    border: none;
+}
+
+.service{
+
+    display: inline-block;
+    width: 250px;
+    margin: 5px;
+}
+
+.service img{
+
+    width: 250px;
+    height: 188px;
+    border: 1px solid white;
+}
+
+
+/* ===================================================================================================================== */
+/*                                             OUR-PROJECTS-SECTION                                                      */
+/* ===================================================================================================================== */
+
+.our-projects-section{
+
+    text-align: center;
+    padding: 10px 20px;
+    
+   
+}
+
+.our-projects-section h2{
+
+    color: blue;
+    font-weight: bold;
+}
+
+.our-projects-section p{
+
+    color: darkgray;
+    font-weight: bold;
+}
+
+.recent-work{
+
+    display: inline-block;
+    width: 250px;
+    margin: 5px;
+}
+
+.recent-work img{
+
+    width: 250px;
+    height: 188px;
+    border-radius: 25px;
+    
+}
+
+.recent-work img:hover{
+
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+
+/* ===================================================================================================================== */
+/*                                                CONTACT-SECTION                                                        */
+/* ===================================================================================================================== */
+
+.contact-section{
+
+    background: teal;
+    color: #fff;
+    padding: 10px 20px;
+    
+}
+
+legend{
+
+    font-weight: bold;
+
+}
+
+.contact-section i{
+
+    margin: 10px;
+    font-size: 14px;
+}
+
+.distance{
+
+    margin: 2px;
+}
+
+.contact-image{
+
+    width: 200px;
+    height: 132.91px;
+}
+
+.one-line{
+
+    display: inline-block;
+}
+
+fieldset div{
+    display: flex;
+}
+/* ===================================================================================================================== */
+/*                                             REMOVE MENU-ICONS ON LARGER VIEWPORT                                      */
+/* ===================================================================================================================== */
+
+header .fa{
+
+    display: none;
+}
+
+/* ===================================================================================================================== */
+/*                                                  MEDIA-QUERIES                                                        */
+/* ===================================================================================================================== */
+
+@media (max-width: 767px) and (orientation: portrait){
+
+    .about-section{
+
+        padding: 20px;
+    }
+
+    .far-bar{                   /* ALTER THE MENU BAR */
+
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+    }
+
+    header .fa{                  /* ALTER MENU ICONS */
+
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin: 10px 25px;
+        cursor: pointer;
+
+    }
+
+    .menu{
+
+        width: 200px;
+        height: 100vh;
+        background: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+
+    .menu a{
+
+        display: block;
+    }
+
+    /* ***************************************************************************************************************** */
+
+    .hero h1, hr{
+
+        position: relative;
+        top: 20px;
+        left: 20px;
+
+    }
+
+    .hero h1{
+
+        font-size: 30px;
+    }
+
+    .hero .description{
+
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    .hero .our-offers{
+
+        margin-top: 100px;
+        margin-left: 5px;
+        padding: 20px;
+
+    }
+
+    .offer{      /* image-container*/
+
+        width: 130px;
+        padding: 5px;
+        
+    }
+
+    .building-image, .pave-image, .interior-image, .exterior-image{
+
+        width: 130px;
+        height: 100px;
+        object-fit: cover;
+        
+    }
+
+    
+
+     .hide{   /* MAKE THE IMAGE NOT DISPLAY AND DESCRIPTION */
+
+        display: none;
+    }
+    
+    
+    html, body{
+         
+        width: 100%;
+        overflow-x: none;
+        
+    }
+
+    header:hover{
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape){
+
+    .far-bar{                   /* ALTER THE MENU BAR */
+
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+    }
+
+    header .fa{                  /* ALTER MENU ICONS */
+
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin: 10px 25px;
+        cursor: pointer;
+
+    }
+
+    .menu{
+
+        width: 200px;
+        height: 100vh;
+        background: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+
+    .menu a{
+
+        display: block;
+    }
+
+   
+
+}
+
+/* ===================================================================================================================== */
+/*                                                          FOOTER                                                       */
+/* ===================================================================================================================== */
+
+footer{
+
+    background: #000;
+    color: #fff;
+    
+    text-align: center;
+    padding: 10px;
+
+    position: relative;
+    bottom: 0;
+    
+    
+}
+
