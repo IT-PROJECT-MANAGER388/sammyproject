@@ -81,7 +81,10 @@ header p{
 
 
 hr{                     /* HORIZONTAL LINE BELOW THE MAIN-HEADING */
-    width: 662px;
+    
+    width: 90%;
+    max-width: 662px;
+    
 }
 
 
