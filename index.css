@@ -393,13 +393,6 @@ header .fa{
         display: none;
     }
     
-    
-    html, body{
-         
-        width: 100%;
-        overflow-x: hidden;
-        
-    }
 
     header:hover{
 
