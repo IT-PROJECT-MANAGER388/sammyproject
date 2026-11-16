@@ -333,6 +333,7 @@ header .fa{
         right: -200px;
         text-align: left;
         z-index: 2;
+        transition: right .3s ease;
 
     }
 
@@ -435,6 +436,7 @@ header .fa{
         right: -200px;
         text-align: left;
         z-index: 2;
+        
 
     }
 
