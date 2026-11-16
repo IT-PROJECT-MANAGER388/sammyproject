@@ -328,7 +328,7 @@ header .fa{
         width: 200px;
         height: 100vh;
         background: #000;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -200px;
         text-align: left;
