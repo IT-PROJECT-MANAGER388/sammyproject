@@ -445,6 +445,9 @@ header .fa{
         display: block;
     }
 
+    .our-offers{
+        display: none;
+    }
    
 
 }
