@@ -447,7 +447,7 @@ header .fa{
 
    .building-image, .pave-image, .interior-image, .exterior-image{  /* REMOVE IMAGES ON THE COVER PAGE FROM DISPLAYING */
 
-        display none;
+        display: none;
         
     }
 
