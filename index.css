@@ -450,7 +450,10 @@ header .fa{
         display none;
         
     }
-   
+
+    .image-description{
+        display: none;
+    }
 
 }
 
